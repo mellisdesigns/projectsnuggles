@@ -1,0 +1,57 @@
+.article-list {
+  margin-top: 80px;
+
+  &__item {
+    padding: 20px 30px;
+    border: 1px solid #c4ced1;
+    border-radius: 3px;
+    cursor: pointer;
+
+    &:hover {
+      border-color: #70cf32;
+    }
+
+    & + & {
+      margin-top: 20px;
+    }
+  }
+}
+
+.article-card {
+
+  &__subtitle {
+    color: #889096;
+    font-weight: normal;
+  }
+
+  &__author-info {
+    display: flex;
+    margin-bottom: 15px;
+  }
+
+  &__avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__container {
+    font-size: 14px;
+  }
+
+  &__name {
+    display: block;
+    color: #2fb628;
+  }
+
+  &__post-time {
+    display: block;
+    color: #a4aeb3;
+  }
+}
