@@ -1,2 +1,14 @@
-The Categories Page
-{{outlet}}
+
+<h3>Please select the topics your are interested in:</h3>
+
+<div class="topic-list">
+  <div class="row topic-list__row">
+    {{#each categories as |category|}}
+    <div class="col-md-4">
+      {{category-box category=category}}
+    </div>
+    {{/each}}
+  </div>
+</div>
+
+<button type="button" class="btn btn-success-outline btn-lg right" {{action 'goToArticles'}}>Done</button>
