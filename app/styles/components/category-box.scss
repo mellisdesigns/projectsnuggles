@@ -1,0 +1,15 @@
+.category-box {
+  font-size: 16px;
+  text-align: center;
+  border-radius: 3px;
+  padding: 24px 15px;
+  background: #f4f4f5;
+  cursor: pointer;
+  user-select: none;
+  margin-bottom: 20px;
+
+  &--selected {
+    background: #70cf32;
+    color: #fff;
+  }
+}
