@@ -1,0 +1,20 @@
+<h1>Create new Article</h1>
+<form>
+  <fieldset class="form-group">
+    <label for="articleTitle">Article Title</label>
+    {{input type="text" id="articleTitle" class="form-control" value=title placeholder="Enter article title"}}
+    <small class="text-muted">Make it something that counts</small>
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="articleContent">Article Content</label>
+    {{textarea id="articleContent" class="form-control" value=content placeholder="Enter article content"}}
+    <small class="text-muted">Add some content</small>
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="articleTags">Article Tags</label>
+    {{input type="text" id="articleTags" class="form-control" value=tag placeholder="Enter tags"}}
+    <small class="text-muted">Add some tags seperated by a space</small>
+  </fieldset>
+  <button class="btn btn-primary" {{action 'saveArticleRecord'}}>Save article</button>
+</form>
+
